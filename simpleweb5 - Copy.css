@@ -1,0 +1,58 @@
+h1{
+    background-color: orange;
+    border: 5px solid #264653;
+    color:orchid;
+    padding: 0.7em;
+    width: 200px;
+    font-size: 1.8em;
+    text-align: center;
+    margin: 20px auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+
+}
+h1:nth-of-type(2n){
+    background-color: floralwhite;
+}
+h1:nth-of-type(3n){
+    background-color:greenyellow;
+}
+h1:nth-of-type(4n){ 
+    background-color:khaki;
+}
+/* Use of tranform */
+
+ section:first-of-type h1:nth-of-type(1){
+    /* transform-origin: bottom right; */
+    transform: rotate(45deg);
+}
+section:first-of-type h1:nth-of-type(2){
+    transform: scaley(2,1);
+}
+section:first-of-type h1:nth-of-type(3){
+    transform: scale(0.6);
+}
+section:first-of-type h1:nth-of-type(4){
+    transform: translateX(200px);
+}
+section:nth-of-type h1:nth-of-type(4){
+    transform: translate(-100px,50px);
+}
+section:nth-of-type(2) h1:nth-of-type(1){
+    transform:skew(20deg);
+}
+section:nth-of-type(2) h1:nth-of-type(2){
+    transform:skew(10deg,5deg);
+}
+section:nth-of-type(2)h1:nth-of-type(3){
+    transform:rotate(180deg)scale(1.3);
+
+}
+section:nth-of-type(2){
+    transform:scale(0.7)translate(500px);
+
+}
+img{
+    width: 500px;
+    height: 500px;
+}
